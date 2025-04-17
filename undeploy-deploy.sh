@@ -1,7 +1,7 @@
 import sys
 appname1=sys.argv[1]
 apppath='/u01/app/oracle/middleware/applications/'
-def wlDeployUndeploy(username, password, adminURL, appName, location, targets, stageMode):
+def wlDeployUndeploy(username, password, adminURL, appName, location, targets, stageMode)
     try:
         #connect to admin server
         connect(username, password, adminURL)
