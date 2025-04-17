@@ -1,0 +1,6 @@
+amazon
+AdminServer 192.168.0.187 7001
+amazon_1 192.168.0.137 7003
+
+tomcat
+jenkins 192.168.0.137 8080
