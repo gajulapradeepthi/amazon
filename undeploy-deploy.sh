@@ -1,7 +1,9 @@
+
+
 import sys
 appname1=sys.argv[1]
 apppath='/u01/app/oracle/middleware/applications/'
-def wlDeployUndeploy(username, password, adminURL, appName, location, targets, stageMode)
+def wlDeployUndeploy(username, password, adminURL, appName, location, targets, stageMode):
     try:
         #connect to admin server
         connect(username, password, adminURL)
@@ -25,4 +27,3 @@ def wlDeployUndeploy(username, password, adminURL, appName, location, targets, s
     except Exception, e:
          print ex.toString()
 wlDeployUndeploy('weblogic','weblogic1','t3://192.168.0.137:7001', appname1, apppath + appname1 + ".war", targets='mycluster', stageMode='stage')
-
